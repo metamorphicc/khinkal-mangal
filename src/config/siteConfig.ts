@@ -59,7 +59,7 @@ export const siteConfig = {
       "Теплое место на Интернациональной, где можно пообедать, взять еду с собой или заказать доставку домой.",
     cta: "Заказать стол",
     image:
-      "https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&w=1800&q=85",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Khinkali_551.jpg/1280px-Khinkali_551.jpg",
   },
   menu: {
     title: "Вкус, который держит момент",

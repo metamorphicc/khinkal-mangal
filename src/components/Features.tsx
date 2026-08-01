@@ -10,7 +10,7 @@ export function Features() {
       <div className="mx-auto flex min-h-[calc(100vh-12rem)] max-w-7xl flex-col justify-center">
         <div className="grid gap-10 lg:grid-cols-[0.75fr_1.25fr] lg:items-start">
           <div>
-            <p className="text-sm font-bold uppercase tracking-[0.18em] text-terracotta">
+            <p className="section-label text-sm font-bold uppercase tracking-[0.18em] text-terracotta">
               {siteConfig.labels.features}
             </p>
             <h2 className="font-display mt-5 text-5xl uppercase leading-none sm:text-7xl">
@@ -22,7 +22,7 @@ export function Features() {
             {siteConfig.features.map((item) => (
               <div
                 key={item}
-                className="flex min-h-24 items-start gap-4 border border-[var(--line)] p-5"
+                className="lift-card flex min-h-24 items-start gap-4 border border-[var(--line)] p-5"
               >
                 <Check className="mt-1 shrink-0 text-terracotta" size={20} />
                 <span className="text-lg font-bold leading-7">{item}</span>
@@ -43,7 +43,7 @@ export function Features() {
 
 function Info({ label, value }: { label: string; value: string }) {
   return (
-    <div className="border-b border-[var(--line)] py-7 md:border-b-0 md:border-r md:px-7 md:first:pl-0 md:last:border-r-0">
+    <div className="lift-card border-b border-[var(--line)] py-7 md:border-b-0 md:border-r md:px-7 md:first:pl-0 md:last:border-r-0">
       <p className="text-sm font-bold uppercase tracking-[0.14em] text-terracotta">
         {label}
       </p>

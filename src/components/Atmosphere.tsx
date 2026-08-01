@@ -10,18 +10,18 @@ export function Atmosphere() {
       className="min-h-screen bg-ink/88 px-4 py-24 text-cream sm:px-6 lg:px-8"
     >
       <div className="mx-auto grid min-h-[calc(100vh-12rem)] max-w-7xl gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
-        <div className="relative min-h-[520px] overflow-hidden border border-[var(--line)]">
+        <div className="photo-frame relative min-h-[520px] overflow-hidden border border-cream/18">
           <Image
             src={mainImage.image}
             alt={mainImage.title}
             fill
-            className="object-cover"
+            className="image-drift object-cover"
             sizes="(min-width: 1024px) 58vw, 100vw"
           />
         </div>
 
         <div>
-          <p className="text-sm font-bold uppercase tracking-[0.18em] text-terracotta">
+          <p className="section-label text-sm font-bold uppercase tracking-[0.18em] text-terracotta">
             {siteConfig.labels.photos}
           </p>
           <h2 className="font-display mt-5 text-5xl uppercase leading-none sm:text-7xl">
@@ -32,16 +32,16 @@ export function Atmosphere() {
           </p>
 
           <div className="mt-10 grid gap-4 sm:grid-cols-[0.9fr_1.1fr] sm:items-end">
-            <div className="relative min-h-[230px] overflow-hidden border border-[var(--line)]">
+            <div className="photo-frame soft-float relative min-h-[230px] overflow-hidden border border-cream/18">
               <Image
                 src={sideImage.image}
                 alt={sideImage.title}
                 fill
-                className="object-cover"
+                className="image-drift object-cover"
                 sizes="(min-width: 1024px) 22vw, 100vw"
               />
             </div>
-            <div className="border border-[var(--line)] p-5">
+            <div className="lift-card border border-cream/18 p-5">
               <p className="text-sm font-bold uppercase tracking-[0.14em] text-terracotta">
                 {siteConfig.labels.tables}
               </p>

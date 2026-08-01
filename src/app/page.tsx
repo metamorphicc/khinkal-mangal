@@ -35,8 +35,8 @@ export default function Home() {
         <FadeIn>
           <Reviews />
         </FadeIn>
-        <section className="min-h-screen bg-cream px-4 py-24 sm:px-6 lg:px-8">
-          <div className="mx-auto flex min-h-[calc(100vh-12rem)] max-w-4xl items-center">
+        <section id="booking" className="min-h-screen bg-cream px-4 py-28 sm:px-6 lg:px-8">
+          <div className="mx-auto flex min-h-[calc(100vh-14rem)] max-w-4xl items-center">
             <div className="w-full">
               <FadeIn>
                 <BookingForm />

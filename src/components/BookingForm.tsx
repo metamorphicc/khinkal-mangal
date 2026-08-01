@@ -46,11 +46,10 @@ export function BookingForm() {
 
   return (
     <form
-      id="booking"
       onSubmit={handleSubmit}
       className="border border-[var(--line)] bg-cream p-5 text-ink sm:p-8"
     >
-      <p className="text-sm font-bold uppercase tracking-[0.16em] text-terracotta">
+      <p className="section-label text-sm font-bold uppercase tracking-[0.16em] text-terracotta">
         {siteConfig.labels.request}
       </p>
       <h2 className="font-display mt-4 text-4xl uppercase leading-none sm:text-6xl">
@@ -68,7 +67,7 @@ export function BookingForm() {
             setForm((current) => ({ ...current, name: event.target.value }))
           }
           placeholder={siteConfig.booking.fields.name}
-          className="h-12 border border-[var(--line)] bg-transparent px-4 text-ink outline-none placeholder:text-ink/45 focus:border-terracotta"
+          className="h-12 border border-[var(--line)] bg-transparent px-4 text-ink outline-none transition placeholder:text-ink/45 focus:-translate-y-0.5 focus:border-terracotta"
         />
         <input
           required
@@ -78,7 +77,7 @@ export function BookingForm() {
             setForm((current) => ({ ...current, phone: event.target.value }))
           }
           placeholder={siteConfig.booking.fields.phone}
-          className="h-12 border border-[var(--line)] bg-transparent px-4 text-ink outline-none placeholder:text-ink/45 focus:border-terracotta"
+          className="h-12 border border-[var(--line)] bg-transparent px-4 text-ink outline-none transition placeholder:text-ink/45 focus:-translate-y-0.5 focus:border-terracotta"
         />
         <textarea
           value={form.message}
@@ -87,7 +86,7 @@ export function BookingForm() {
           }
           placeholder={siteConfig.booking.fields.message}
           rows={4}
-          className="resize-none border border-[var(--line)] bg-transparent px-4 py-3 text-ink outline-none placeholder:text-ink/45 focus:border-terracotta"
+          className="resize-none border border-[var(--line)] bg-transparent px-4 py-3 text-ink outline-none transition placeholder:text-ink/45 focus:-translate-y-0.5 focus:border-terracotta"
         />
       </div>
 
@@ -96,7 +95,7 @@ export function BookingForm() {
           type="submit"
           variant="dark"
           disabled={status === "loading"}
-          className="w-full sm:w-auto"
+          className="w-full hover:-translate-y-1 sm:w-auto"
         >
           {status === "loading" ? siteConfig.labels.sending : siteConfig.booking.button}
           <Send size={17} />

@@ -12,7 +12,7 @@ export function Contacts() {
     >
       <div className="mx-auto grid min-h-[calc(100vh-12rem)] max-w-7xl gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
         <div>
-          <p className="text-sm font-bold uppercase tracking-[0.18em] text-terracotta">
+          <p className="section-label text-sm font-bold uppercase tracking-[0.18em] text-terracotta">
             {siteConfig.labels.contacts}
           </p>
           <h2 className="font-display mt-4 text-5xl uppercase leading-none sm:text-7xl">

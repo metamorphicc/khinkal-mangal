@@ -12,14 +12,14 @@ export function Hero() {
         alt=""
         fill
         priority
-        className="object-cover opacity-55"
+        className="hero-photo object-cover opacity-55"
         sizes="100vw"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-black/72 via-black/42 to-black/20" />
 
       <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl items-center px-4 pt-24 sm:px-6 lg:px-8">
-        <div className="max-w-4xl">
-          <p className="text-sm font-bold uppercase tracking-[0.16em] text-gold">
+        <div className="hero-copy max-w-4xl">
+          <p className="section-label text-sm font-bold uppercase tracking-[0.16em] text-gold">
             {siteConfig.hero.label}
           </p>
           <h1 className="font-display mt-6 text-5xl uppercase leading-none sm:text-7xl lg:text-8xl">

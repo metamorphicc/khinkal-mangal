@@ -12,7 +12,7 @@ export function MenuSection() {
       <div className="mx-auto flex min-h-[calc(100vh-12rem)] max-w-7xl flex-col justify-center">
         <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
           <div>
-            <p className="text-sm font-bold uppercase tracking-[0.18em] text-terracotta">
+            <p className="section-label text-sm font-bold uppercase tracking-[0.18em] text-terracotta">
               {siteConfig.labels.popular}
             </p>
             <h2 className="font-display mt-5 text-5xl uppercase leading-none sm:text-7xl">
@@ -25,7 +25,7 @@ export function MenuSection() {
             </p>
             <Link
               href="#booking"
-              className="mt-7 inline-flex items-center gap-2 bg-terracotta px-6 py-4 text-sm font-bold uppercase tracking-[0.08em] text-cream transition hover:bg-ink"
+              className="mt-7 inline-flex items-center gap-2 bg-terracotta px-6 py-4 text-sm font-bold uppercase tracking-[0.08em] text-cream transition hover:-translate-y-1 hover:bg-ink"
             >
               {siteConfig.labels.delivery}
               <ArrowRight size={18} />
@@ -37,14 +37,14 @@ export function MenuSection() {
           {siteConfig.menu.items.map((item) => (
             <article
               key={item.title}
-              className="group border border-[var(--line)] bg-cream"
+              className="lift-card group border border-[var(--line)] bg-cream"
             >
               <div className="relative min-h-[260px] overflow-hidden">
                 <Image
                   src={item.image}
                   alt={item.title}
                   fill
-                  className="object-cover transition duration-500 group-hover:scale-105"
+                  className="image-drift object-cover"
                   sizes="(min-width: 1280px) 30vw, (min-width: 768px) 45vw, 100vw"
                 />
               </div>
