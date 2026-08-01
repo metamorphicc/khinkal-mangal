@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --cream: #f4eddf;
+  --ink: #12100d;
+  --green: #1f3326;
+  --terracotta: #b85f43;
+  --terracotta-dark: #8f4532;
+  --gold: #d6a84f;
+  --line: rgba(18, 16, 13, 0.16);
+}
+
+@theme inline {
+  --color-cream: var(--cream);
+  --color-ink: var(--ink);
+  --color-green: var(--green);
+  --color-terracotta: var(--terracotta);
+  --color-terracotta-dark: var(--terracotta-dark);
+  --color-gold: var(--gold);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--cream);
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: rgba(184, 95, 67, 0.32);
+}
+
+.font-display {
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  letter-spacing: 0.02em;
+}
